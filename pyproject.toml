@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "radio-to-spotify"
+version = "0.1.0"
+description = ""
+authors = ["Luke Hankins <luke@ethersmith.com>"]
+readme = "README.md"
+packages = [{include = "radio_to_spotify"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+spotipy = "^2.22.0"
+fuzzywuzzy = {extras = ["speedup"], version = "^0.18.0"}
+bs4 = "^0.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
